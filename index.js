@@ -61,4 +61,4 @@ document.getElementById("btn2").addEventListener("click",function roll(){
   else {
     document.querySelector("h1").innerHTML = "Draw!";
   }
-  });
+  })
