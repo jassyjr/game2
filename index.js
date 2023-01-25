@@ -1,4 +1,7 @@
-
+var player1 =window.prompt("enter player 1 name");
+var player2 =window.prompt("enter player 2 name");
+document.getElementById("prom1").innerHTML= player1;
+document.getElementById("prom2").innerHTML= player2;
 document.getElementById("btn1").addEventListener("click",function roll(){
 var randomNumber1 = Math.floor(Math.random() * 6) + 1; //1-6
 
@@ -20,10 +23,10 @@ document.querySelectorAll("img")[1].setAttribute("src", randomImageSource2);
 
 //If player 1 wins
 if (randomNumber1 > randomNumber2) {
-  document.querySelector("h1").innerHTML = "🚩 Play 1 Wins!";
+  document.querySelector("h1").innerHTML = "🚩"+ Play1+" Wins!";
 }
 else if (randomNumber2 > randomNumber1) {
-  document.querySelector("h1").innerHTML = "Player 2 Wins! 🚩";
+  document.querySelector("h1").innerHTML = Player2 +"Wins! 🚩";
 }
 else {
   document.querySelector("h1").innerHTML = "Draw!";
@@ -50,10 +53,10 @@ document.getElementById("btn2").addEventListener("click",function roll(){
   
   //If player 1 wins
   if (randomNumber1 > randomNumber2) {
-    document.querySelector("h1").innerHTML = "🚩 Play 1 Wins!";
+    document.querySelector("h1").innerHTML = "🚩"+ Play1 +"Wins!";
   }
   else if (randomNumber2 > randomNumber1) {
-    document.querySelector("h1").innerHTML = "Player 2 Wins! 🚩";
+    document.querySelector("h1").innerHTML = Player2+" Wins! 🚩";
   }
   else {
     document.querySelector("h1").innerHTML = "Draw!";
